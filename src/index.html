@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/styles.min.css">
     <title>Pato - Eval</title>
 </head>
 <body>
@@ -18,59 +19,53 @@
         <a href="#home"><i class="fas fa-angle-double-up"></i></a>
     </div>
 
-    <!--  nav + header -->
-	<header class="header">
-		<!-- Header desktop -->
-		<div class="wrap-menu-header" id="nav">
-			<div class="container" id="nav">
-				<div class="wrap_header" id="nav">
-					<!-- Logo -->
-					<div class="logo">
-						<a href="index.html"><img src="img/logo.png" alt="LOGO PATO RESTO"></a>
-					</div>
-					<!-- Menu -->
-					<div class="wrap_menu">
-						<nav class="menu">
-							<ul class="main_menu">
-								<li>
-									<a href="index.html">Home</a>
-								</li>
-								<li>
-									<a href="menu.html">Menu</a>
-								</li>
-								<li>
-									<a href="reservation.html">Reservation</a>
-								</li>
-								<li>
-									<a href="gallery.html">Gallery</a>
-								</li>
-								<li>
-									<a href="about.html">About</a>
-								</li>
-								<li>
-									<a href="blog.html">Blog</a>
-								</li>
-								<li>
-									<a href="contact.html">Contact</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<!-- Social -->
-					<div class="social">
-						<a href="#"><i class="fab fa-tripadvisor"></i></a>
-						<a href="#"><i class="fab fa-facebook-f"></i></a>
-						<a href="#"><i class="fab fa-twitter"></i></a>
-					</div>
-					<div class="burger-menu" id="burger">
-						<div></div>
-						<div></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-    <!-- End nav + header -->
+	<!-- Overlay-sidebar -->
+		<div class="overlay-sidebar"></div>
+    <!--  Nav  -->
+    <nav class="main-nav">
+        <!-- logo -->
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo_pato" class="logo">
+        </a>
+        <!-- main menu -->
+        <div class="main-menu">
+            <a href="index.html">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Reservation</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <!-- social -->
+        <div class="social">
+			<a href="#"><i class="fab fa-tripadvisor"></i></a>
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="burger-menu">
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <!-- End nav -->
+
+<!-- SIBE BAR NAV -->
+<aside class="sidebar">
+	<div class="close">
+		<a href="#"><i class="fas fa-times"></i></a>
+	</div>
+	<div class="main-menu">
+		<a href="index.html">Home</a>
+		<a href="#">Menu</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="#">About</a>
+		<a href="#">Blog</a>
+		<a href="contact.html">Contact</a>
+		<a href="#" class="btn">Reservation</a>
+	</div>
+</aside>
+
 
 	<!-- SWIPER JS-->
 			<section id="home" class="swiper-container">
@@ -205,7 +200,6 @@
 
 <!-- SECTION REVIEW -->
 
-
 <section class="section-review">
 	<div class="wrapper-review">
 		<span class="span-italia">Customers Say</span>
@@ -306,11 +300,13 @@
 		<div class="header-video">
 		<span class="span-italia"> Discover </span>
 		<h3 class="title-pato">Our Video</h3>
-		<div class="btn-play" >
-			<div class="icon-play">
-				<i class="fas fa-play"></i>
+		<a class="popup-youtube" href="https://www.youtube.com/watch?v=5k1hSu2gdKE&t=1s">
+			<div class="btn-play" >
+				<div class="icon-play">
+					<i class="fas fa-play"></i>
+				</div>
 			</div>
-		</div>
+		</a>
 		</div>
 	</div>
 </section>
@@ -324,10 +320,10 @@
 		<div class="container-section-blog">
 			<div class="article-blog">
 				<div class="article-pic">
-					<img src="img/blog-01.jpg" alt="Best place for wine picture">
+					<a href="#"><img src="img/blog-01.jpg" alt="Best place for wine picture"></a>
 					<div class="date-article">21 Dec 2017</div>
 				</div>
-				<div class="wrap-text-welcome">
+				<div class="wrap-text-blog">
 					<a href="#">
 						<h4 class="title-article">
 							BEST PLACES FOR WINE
@@ -340,18 +336,100 @@
 					</a>
 				</div>
 			</div>
-
+			<div class="article-blog">
+				<div class="article-pic">
+					<a href="#"><img src="img/blog-02.jpg" alt="EGGS AND CHEESE picture"></a>
+					<div class="date-article">15 Dec 2017</div>
+				</div>
+				<div class="wrap-text-blog">
+					<a href="#">
+						<h4 class="title-article">
+							EGGS AND CHEESE
+						</h4>
+					</a>
+					<p class="text-article">
+						Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat.					</p>
+					<a href="about.html" class="our-story">
+						CONTINUE READING <i class="fas fa-long-arrow-alt-right"></i></i>
+					</a>
+				</div>
+			</div>
+			<div class="article-blog">
+				<div class="article-pic">
+					<a href="#"><img src="img/blog-03.jpg" alt="STYLE THE WEDDING PARTY picture"></a>
+					<div class="date-article">12 Dec 2017</div>
+				</div>
+				<div class="wrap-text-blog">
+					<a href="#">
+						<h4 class="title-article">
+							STYLE THE WEDDING PARTY
+						</h4>
+					</a>
+					<p class="text-article">
+						Sed ornare ligula eget tortor tempor, quis porta tellus dictum.					</p>
+					<a href="about.html" class="our-story">
+						CONTINUE READING <i class="fas fa-long-arrow-alt-right"></i></i>
+					</a>
+				</div>
+			</div>
 		</div>
 
 	</div>
 </section>
 
+<!-- SECTION FOOTER -->
+
+<footer class="footer">
+	<div class="container-footer">
+		<div class="contact">
+			<h4>Contact Us</h4>
+			<span>
+				<i class="fa fa-map-marker"></i>
+				8th floor, 379 Hudson St, New York, NY 10018
+			</span>
+			<span>
+				<i class="fa fa-phone"></i>
+				(+1) 96 716 6879
+			</span>
+			<span>
+				<i class="fa fa-envelope"></i>
+				contact@site.com
+			</span>
+		</div>
+		<div class="open">
+			<h4>opening times</h4>
+			<span>09:30 AM – 11:00 PM</span>
+			<span>Every Day</span>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="container-copyright">
+			<div class="social">
+				<a href="#"><i class="fab fa-tripadvisor"></i></a>
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+			</div>
+			<span class="copy">
+				Copyright &copy; 2018 All rights reserved | This template is made with <i class="fa fa-heart"></i>
+				by <a href="https://colorlib.com" target="_blank">Colorlib</a> and modified with <i
+					class="fa fa-heart"></i> by Rhumy
+			</span>
+		</div>
+	</div>
+</footer>
 
 
-
+<!-- PARALLAX -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+
+<!-- Magnific-Popup-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js" integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg==" crossorigin="anonymous"></script>
+
+<!-- SWIPER -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- JS -->
     <script src="./js/script.min.js"></script>
 </body>
 </html>

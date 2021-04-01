@@ -27,31 +27,50 @@ const swiper = new Swiper('.swiper-container', {
 
 // NAVIGATION
 
-window.addEventListener("scroll", function () {
-    var e = window.pageYOffset,
-        s = (document.getElementById("nav"), document.getElementById("header"));
-    console.log(e), e >= 100 ? s.classList.add("nav-js") : s.classList.remove("nav-js");
+let maNav = document.querySelector('.main-nav');
+let logo = document.querySelector('.logo');
+
+window.addEventListener('scroll', function(){
+    let scrolled = window.pageYOffset;
+    if(scrolled > maNav.clientHeight){
+        maNav.classList.add("scroll-down");
+        logo.src = "img/logo2.png";
+    }
+    else{
+        maNav.classList.remove("scroll-down");
+        logo.src = "img/logo.png";
+    }
+});
+
+
+// BURGER MENU
+
+let burgerMenu = document.querySelector('.burger-menu');
+let closeBtn = document.querySelector('.close');
+let sidebar = document.querySelector('.sidebar');
+let overlaySidebar = document.querySelector('.overlay-sidebar');
+
+burgerMenu.addEventListener('click', function(){
+    sidebar.classList.add('show')
+    overlaySidebar.classList.add('show-overlay-sidebar')
+});
+closeBtn.addEventListener('click', function(){
+    sidebar.classList.remove('show')
+    overlaySidebar.classList.remove('show-overlay-sidebar')
 });
 
 
 
+// MAGNIFIC POPUP
 
+$(document).ready(function() {
+	$('.popup-youtube').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//navigation scroll-down
-let mainNav = document.querySelector('.main-nav');
-window.addEventListener('scroll', function(){
-    window.pageYOffset > mainNav.clientHeight ? mainNav.classList.add("scroll-down") : mainNav.classList.remove("scroll-down");
+		fixedContentPos: false
+	});
 });
