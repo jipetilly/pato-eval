@@ -131,37 +131,23 @@
   color: #ec1d25;
 }
 
-// GO UP PAGE
 
-.go-up {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    bottom: 40px;
-    right: 40px;
-    background-color: black;
-    opacity: 0.5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    border-radius: 4px;
+.nav-js {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 15px 0;
+  box-shadow: 0 10px 20px #0001;
 }
-.go-up a {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+.nav-js .burger-menu div {
+  background-color: #000000;
 }
-.go-up .fas {
-    font-size: 20px;
-    margin-left: 0;
+.nav-js .logo a {
+  font-size: 30px;
+  color: #000000;
+  text-transform: uppercase;
 }
-.go-up:hover {
-    background-color: #ec1d25;
-    opacity: 1;
+.nav-js .links a {
+  color: #000000;
 }
 
-@media screen and (max-width: 375px) {
-    .go-up {
-        display: none;
-    }
-}
+

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
@@ -21,15 +21,15 @@
     <!--  nav + header -->
 	<header class="header">
 		<!-- Header desktop -->
-		<div class="wrap-menu-header ">
-			<div class="container">
-				<div class="wrap_header">
+		<div class="wrap-menu-header" id="nav">
+			<div class="container" id="nav">
+				<div class="wrap_header" id="nav">
 					<!-- Logo -->
 					<div class="logo">
 						<a href="index.html"><img src="img/logo.png" alt="LOGO PATO RESTO"></a>
 					</div>
 					<!-- Menu -->
-					<div class="wrap_menu ">
+					<div class="wrap_menu">
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
@@ -74,11 +74,11 @@
 
 	<!-- SWIPER JS-->
 			<section id="home" class="swiper-container">
-            
+
 				<div class="swiper-wrapper">
-					
+
 					<!-- changing slides -->
-					
+
 					<!-- slide 1 -->
 					<div class="swiper-slide" style="background:url('img/slide1-01.jpg')no-repeat center/cover;">
 						<div class="info-hero wrapper">
@@ -111,19 +111,19 @@
 							</div>
 						</div>
 					</div>
-					<!-- end slide 3 -->	
-	
+					<!-- end slide 3 -->
+
 				</div>
 			<!-- If we need pagination -->
 				<div class="swiper-pagination"></div>
-	
+
 			<!-- If we need navigation buttons -->
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next"></div>
-	
+
 		</section>
 		<!-- END SWIPER -->
-    
+
 <!-- SECTION WELCOME -->
 
 <section class="section-welcome bg-pattern1">
@@ -152,19 +152,205 @@
 
 
 <!-- SECTION DISCOVER PATO PLACE PARALLAX -->
-<section class="section-intro">
-	<div class="header-intro" style="background-image: url(img/bg-intro-01.jpg); background-position: center 648.333px;">
-		<span class="span-italia">
-			Discover
-		</span>
-		<h3 class="title-pato">
-			Pato Place
-		</h3>
+<section class="section-discover">
+	<div class="parallax-window" data-parallax="scroll" data-image-src="/img/bg-intro-01.jpg">
+		<div class="header-discover">
+		<span class="span-italia"> Discover </span>
+		<h3 class="title-pato">Pato Place</h3>
+		</div>
 	</div>
 </section>
 
+
+<!-- SECTION OUR MENU -->
+
+<section class="section-ourmenu">
+	<div class="wrapper-ourmenu">
+		<span class="span-italia">Discover</span>
+		<h3 class="title-h3">Our Menu</h3>
+		<div class="container-section-ourmenu">
+			<div class="col-left">
+				<div class="rubrik-ourmenu">
+					<img src="img/our-menu-01.jpg" alt="IMG-MENU LUNCH">
+					<a href="#" class="btn-menu center-btn">Lunch</a>
+				</div>
+				<div class="rubrik-ourmenu">
+					<img src="img/our-menu-05.jpg" alt="IMG-MENU DINNER">
+					<a href="#" class="btn-menu center-btn">Dinner</a>
+				</div>
+				<div class="rubrik-ourmenu big">
+					<img src="img/our-menu-13.jpg" alt="IMG-MENU Happy Hour">
+					<a href="#" class="btn-menu center-btn">Happy Hour</a>
+				</div>
+			</div>
+			<div class="col-right">
+				<div class="rubrik-ourmenu">
+					<img src="img/our-menu-08.jpg" alt="IMG-MENU Drink">
+					<a href="#" class="btn-menu center-btn">Drink</a>
+				</div>
+				<div class="rubrik-ourmenu">
+					<img src="img/our-menu-10.jpg" alt="IMG-MENU Starters">
+					<a href="#" class="btn-menu center-btn">Starters</a>
+				</div>
+				<div class="rubrik-ourmenu">
+					<img src="img/our-menu-16.jpg" alt="IMG-MENU Dessert">
+					<a href="#" class="btn-menu center-btn">Dessert</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- SECTION REVIEW -->
+
+
+<section class="section-review">
+	<div class="wrapper-review">
+		<span class="span-italia">Customers Say</span>
+		<h3 class="title-h3">Review</h3>
+	</div>
+
+<!-- Slider main container -->
+<div class="swiper-container swiper-review">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+	<!-- Slides -->
+	<div class="swiper-slide">
+		<!-- slide 1 -->
+		<div class="info-hero wrapper">
+			<div class="pic-review">
+				<img src="img/avatar-01.jpg" alt="IGM-AVATAR 01">
+			</div>
+			<div class="content-review">
+				<p class="text-review">
+					“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
+				</p>
+				<div class="star-review">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="more-review">
+					Marie Simmons ˗ New York
+				</div>
+		</div>
+		</div>
+		<!-- end slide 1 -->
+	</div>
+	<div class="swiper-slide">
+		<!-- slide 2 -->
+		<div class="info-hero wrapper">
+		<div class="pic-review">
+			<img src="img/avatar-04.jpg" alt="IGM-AVATAR 04">
+		</div>
+		<div class="content-review">
+			<p class="text-review">
+				“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
+			</p>
+			<div class="star-review">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</div>
+			<div class="more-review">
+				Marie Simmons ˗ New York
+			</div>
+		</div>
+		</div>
+		<!-- end slide 2 -->
+	</div>
+	<div class="swiper-slide">
+		<!-- slide 3 -->
+		<div class="info-hero wrapper">
+			<div class="pic-review">
+				<img src="img/avatar-05.jpg" alt="IGM-AVATAR 05">
+			</div>
+			<div class="content-review">
+				<p class="text-review">
+					“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
+				</p>
+				<div class="star-review">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="more-review">
+					Marie Simmons ˗ New York
+				</div>
+			</div>
+		</div>
+		<!-- end slide 3 -->
+	</div>
+	</div>
+	<!-- If we need pagination -->
+	<div class="swiper-pagination"></div>
+	<!-- If we need navigation buttons -->
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+  </div>
+</section>
+
+
+
+<!-- SECTION OUR VIDEO PARALLAX -->
+<section class="section-video">
+	<div class="parallax-window-video" data-parallax="scroll" data-image-src="/img/bg-cover-video-02.jpg">
+		<div class="header-video">
+		<span class="span-italia"> Discover </span>
+		<h3 class="title-pato">Our Video</h3>
+		<div class="btn-play" >
+			<div class="icon-play">
+				<i class="fas fa-play"></i>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
+
+<!-- SECTION LAST NEWS BLOG -->
+
+<section class="section-blog">
+	<div class="wrapper-blog">
+		<span class="span-italia">Last News</span>
+		<h3 class="title-h3">THE BLOG</h3>
+		<div class="container-section-blog">
+			<div class="article-blog">
+				<div class="article-pic">
+					<img src="img/blog-01.jpg" alt="Best place for wine picture">
+					<div class="date-article">21 Dec 2017</div>
+				</div>
+				<div class="wrap-text-welcome">
+					<a href="#">
+						<h4 class="title-article">
+							BEST PLACES FOR WINE
+						</h4>
+					</a>
+					<p class="text-article">
+						Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.					</p>
+					<a href="about.html" class="our-story">
+						CONTINUE READING <i class="fas fa-long-arrow-alt-right"></i></i>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="./js/parallax.js"></script>
+	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.min.js"></script>
 </body>

@@ -1,0 +1,48 @@
+// BTN SWIPER
+
+.btn-swiper {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #ec1d25;
+    padding: 15px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.btn-swiper:hover {
+    background-color:#ec1d25;
+    color: #ffffff;
+}
+
+// BTN OUR MENU
+
+.btn-menu {
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.8;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+}
+.btn-menu:hover {
+    background-color:#ec1d25;
+    opacity: 0.9;
+    color: white;
+}
+
+.center-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
