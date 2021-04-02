@@ -3,7 +3,6 @@
     color: white;
     span{
         display: block;
-        margin-top: 20px;
         font-family: 'Montserrat', sans-serif;
         font-size: 13px;
         font-weight: 400;
@@ -49,6 +48,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 .copyright{
     padding-top: 15px;
@@ -64,5 +65,20 @@
     }
     .copy a{
         color: darkgray;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container-footer{
+        display: flex;
+        width: 85%;
+    }
+    .container-copyright{
+        display: flex;
+        width: 85%;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
     }
 }

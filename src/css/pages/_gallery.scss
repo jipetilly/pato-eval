@@ -1,6 +1,6 @@
 .section-gallery{
     padding: 80px 0;
-    .wrap-label-gallery{
+    .wrap-label{
         display: flex;
         justify-content: center;
         a{
@@ -21,13 +21,15 @@
             }
         }
     }
+
+
     .wrap-gallery{
         width: 100%;
-        margin: 40px auto;
+        margin: 30px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        .item-gallery{
+        .picture-gallery{
             position: relative;
             width: 30%;
             margin-left: 1%;
@@ -78,8 +80,25 @@
         }
     }
 }
+
 .label-active {
     background-color: #111111;
     color: white !important;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .wrap-label{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrap-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }

@@ -28,6 +28,13 @@
     vertical-align: middle;
 }
 
+@media only screen and (max-width: 1200px) {
+    .wrapper-map-contact{
+        width: 85%;
+    }
+
+}
+
 .section-contact{
     background-image: url(../img/pattern1.png);
     background-repeat: repeat;
@@ -108,5 +115,17 @@ input.btn-submit{
     &:hover{
         background-color: #ec1d25;
         color: white;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .wrap-form-reservation {
+        padding: 0px;
+    }
+    .wrap-inputname{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
     }
 }

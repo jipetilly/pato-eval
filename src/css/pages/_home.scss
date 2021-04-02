@@ -106,11 +106,25 @@
     overflow: hidden;
     img {
         width: 100%;
+        vertical-align: middle;
     }
 }
 .wrap-picture-welcome img:hover {
     transform: scale(1.1);
     transition: all ease-in-out 0.4s;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .row-welcome{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: space-between;
+            .wrap-picture-welcome {
+                margin-top: 30px;
+            }
+        }
     }
 
 // DISCOVER PATO PLACE PARALLAX
@@ -210,6 +224,33 @@
     transition: all 1s ease-in-out; 
 }
 
+@media only screen and (max-width: 1200px) {
+    .container-section-ourmenu{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        .rubrik-ourmenu {
+            width: 500px;
+        }
+        .col-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .big {
+                width: 500px;
+            }
+        }
+        .col-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 550px;
+        }
+    }
+}
+
 // SECTION REVIEW
 
 .section-review{
@@ -256,6 +297,7 @@
     margin-right: auto;
     margin-bottom: 33px;
     margin-top: 43px;
+    color: black;
 }
 .btn-play:hover {
     display: flex;
@@ -338,4 +380,40 @@ margin-bottom: 15px;
     color: #666666;
     margin: 0px;
     padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container-section-blog{
+        display:  flex;
+        flex-direction: column;
+        align-items: center;
+        .article-blog {
+            width: 80%;
+            margin-bottom: 30px;
+        }        
+    }
+}
+
+
+// VIDEO MAGNIFIC POPUP
+
+ .mfp-fade.mfp-bg {
+	opacity: 0;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
 }
