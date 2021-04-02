@@ -1,3 +1,4 @@
+
 // SWIPER JS
 
 const swiper = new Swiper('.swiper-container', {
@@ -19,10 +20,6 @@ const swiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
     },
   });
-
-// PARALLAX 
-
-// $('.parallax-window').parallax({imageSrc: '/img/bg-intro-01.jpg'});
 
 
 // NAVIGATION
@@ -47,30 +44,15 @@ window.addEventListener('scroll', function(){
 
 let burgerMenu = document.querySelector('.burger-menu');
 let closeBtn = document.querySelector('.close');
-let sidebar = document.querySelector('.sidebar');
-let overlaySidebar = document.querySelector('.overlay-sidebar');
+let sideMenu = document.querySelector('.sidemenu');
+let overlaySideMenu = document.querySelector('.overlay-sidemenu');
 
 burgerMenu.addEventListener('click', function(){
-    sidebar.classList.add('show')
-    overlaySidebar.classList.add('show-overlay-sidebar')
+    sideMenu.classList.add('show')
+    overlaySideMenu.classList.add('show-overlay-sidemenu')
 });
 closeBtn.addEventListener('click', function(){
-    sidebar.classList.remove('show')
-    overlaySidebar.classList.remove('show-overlay-sidebar')
+    sideMenu.classList.remove('show')
+    overlaySideMenu.classList.remove('show-overlay-sidemenu')
 });
 
-
-
-// MAGNIFIC POPUP
-
-$(document).ready(function() {
-	$('.popup-youtube').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-
-		fixedContentPos: false
-	});
-});

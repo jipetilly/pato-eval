@@ -1,0 +1,112 @@
+.header-page{
+    background: url(../img/bg-title-page-02.jpg)center/cover;
+    width: 100%;
+    min-height: 545px;
+}
+.center-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-page h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    word-spacing: 6px;
+    margin-top: -200px;
+}
+.map {
+    border : 5px solid white;
+    border-radius: 10px;
+}
+.map iframe {
+    vertical-align: middle;
+}
+
+.section-contact{
+    background-image: url(../img/pattern1.png);
+    background-repeat: repeat;
+    padding: 30px 0;
+    h3{
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 26px;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing:2px ;
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+.wrapper-map-contact{
+    margin:0 auto;
+    max-width: 1200px;
+    padding: 80px 0;
+}
+.wrap-form-reservation{
+    max-width: 800px;
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    .wrap-inputname{
+        display: flex;
+        justify-content: space-between;
+    }
+    input, textarea{
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid #d9d9d9;
+    }
+    input[type="submit"]{
+        width: 100px;
+    }
+    .label{
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto";
+        font-weight: 200;
+        margin-bottom: 20px;
+        font-weight: 400;
+        text-align: left;
+        color: #555;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        label{
+            padding-bottom: 10px;
+        }
+    }
+
+}
+::placeholder {
+    color: #555;
+    opacity: .5;
+}
+
+input:active {
+    border: 1px $main-color solid;
+}
+
+input.btn-submit{
+    display: flex;
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0 auto;
+    border: 0;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    &:hover{
+        background-color: #ec1d25;
+        color: white;
+    }
+}
